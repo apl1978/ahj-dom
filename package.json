@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "lint": "eslint . --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "jest",
     "coverage": "jest --coverage",
     "preshow:coverage": "npm run coverage",
@@ -14,7 +15,7 @@
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
   },
-  "author": "coursar",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.23.0",
@@ -33,12 +34,7 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/apl1978/ahj-dom.git"
-  },
-  "bugs": {
-    "url": "https://github.com/apl1978/ahj-dom/issues"
-  },
-  "homepage": "https://github.com/apl1978/ahj-dom#readme"
+  "dependencies": {
+    "core-js": "^3.35.1"
+  }
 }
